@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+body {
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    background-color: #111;
+    color: #FFFFEC;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: #FFFFEC;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3.75rem;
+    animation: glitch-animation 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+    0% {
+        text-shadow: 2px 2px 0 #FF0000, -2px -2px 0 #00FF00;
+    }
+    25% {
+        text-shadow: -2px 3px 0 #FF0000, 2px -3px 0 #00FF00;
+    }
+    50% {
+        text-shadow: 2px -2px 0 #FF0000, -2px 2px 0 #00FF00;
+    }
+    75% {
+        text-shadow: -3px -2px 0 #00FF00, 3px 2px 0 #FF0000;
+    }
+    100% {
+        text-shadow: 2px 2px 0 #FF0000, -2px -2px 0 #00FF00;
+    }
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #FFFFEC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about-section {
+    background: url(assets/download.jpeg);
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bio-image {
+    flex: 1; 
+}
+
+.bio-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px dashed #FFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; 
+}
+
+.bio-image img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.1);
+}
+
+.bio {
+    flex: 2;
+    text-align: justify;
+}
+
+h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #FFFFEC;
+    margin-top: 0;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #FFFFEC;
+}
